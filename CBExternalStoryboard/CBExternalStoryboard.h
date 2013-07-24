@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface CBExternalStoryboard : NSObject
-
-@end
+#import <UIKit/UIKit.h>
+#import "ExternalModalSegue.h"
+#import "ExternalPushSegue.h"
+#import "ExternalViewController.h"
+#import "ExternalViewController.h"

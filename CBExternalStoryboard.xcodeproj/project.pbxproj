@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		28343EAC1743919300C07DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EAB1743919300C07DDF /* Foundation.framework */; };
 		28343EB11743919300C07DDF /* CBExternalStoryboard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28343EB01743919300C07DDF /* CBExternalStoryboard.h */; };
-		28343EB31743919300C07DDF /* CBExternalStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343EB21743919300C07DDF /* CBExternalStoryboard.m */; };
 		28343EBB1743919300C07DDF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EBA1743919300C07DDF /* SenTestingKit.framework */; };
-		28343EBD1743919300C07DDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EBC1743919300C07DDF /* UIKit.framework */; };
 		28343EBE1743919300C07DDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EAB1743919300C07DDF /* Foundation.framework */; };
 		28343EC11743919300C07DDF /* libCBExternalStoryboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EA81743919300C07DDF /* libCBExternalStoryboard.a */; };
 		28343EC71743919300C07DDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28343EC51743919300C07DDF /* InfoPlist.strings */; };
 		28343ECA1743919300C07DDF /* CBExternalStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343EC91743919300C07DDF /* CBExternalStoryboardTests.m */; };
+		28343EDF1743930100C07DDF /* ExternalBaseSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343ED61743930100C07DDF /* ExternalBaseSegue.m */; };
+		28343EE01743930100C07DDF /* ExternalModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343ED81743930100C07DDF /* ExternalModalSegue.m */; };
+		28343EE11743930100C07DDF /* ExternalPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343EDA1743930100C07DDF /* ExternalPushSegue.m */; };
+		28343EE21743930100C07DDF /* ExternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343EDC1743930100C07DDF /* ExternalViewController.m */; };
+		28343EEA1743947F00C07DDF /* CBESNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28343EE91743947F00C07DDF /* CBESNavigationController.m */; };
+		28343EEF1743958800C07DDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28343EED1743957F00C07DDF /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +50,23 @@
 		28343EAB1743919300C07DDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28343EAF1743919300C07DDF /* CBExternalStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBExternalStoryboard-Prefix.pch"; sourceTree = "<group>"; };
 		28343EB01743919300C07DDF /* CBExternalStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBExternalStoryboard.h; sourceTree = "<group>"; };
-		28343EB21743919300C07DDF /* CBExternalStoryboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBExternalStoryboard.m; sourceTree = "<group>"; };
 		28343EB91743919300C07DDF /* CBExternalStoryboardTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBExternalStoryboardTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28343EBA1743919300C07DDF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		28343EBC1743919300C07DDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		28343EC41743919300C07DDF /* CBExternalStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBExternalStoryboardTests-Info.plist"; sourceTree = "<group>"; };
 		28343EC61743919300C07DDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28343EC81743919300C07DDF /* CBExternalStoryboardTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBExternalStoryboardTests.h; sourceTree = "<group>"; };
 		28343EC91743919300C07DDF /* CBExternalStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBExternalStoryboardTests.m; sourceTree = "<group>"; };
+		28343ED51743930100C07DDF /* ExternalBaseSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalBaseSegue.h; sourceTree = "<group>"; };
+		28343ED61743930100C07DDF /* ExternalBaseSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalBaseSegue.m; sourceTree = "<group>"; };
+		28343ED71743930100C07DDF /* ExternalModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalModalSegue.h; sourceTree = "<group>"; };
+		28343ED81743930100C07DDF /* ExternalModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalModalSegue.m; sourceTree = "<group>"; };
+		28343ED91743930100C07DDF /* ExternalPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalPushSegue.h; sourceTree = "<group>"; };
+		28343EDA1743930100C07DDF /* ExternalPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalPushSegue.m; sourceTree = "<group>"; };
+		28343EDB1743930100C07DDF /* ExternalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalViewController.h; sourceTree = "<group>"; };
+		28343EDC1743930100C07DDF /* ExternalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalViewController.m; sourceTree = "<group>"; };
+		28343EE81743947F00C07DDF /* CBESNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBESNavigationController.h; sourceTree = "<group>"; };
+		28343EE91743947F00C07DDF /* CBESNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBESNavigationController.m; sourceTree = "<group>"; };
+		28343EED1743957F00C07DDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28343EAC1743919300C07DDF /* Foundation.framework in Frameworks */,
+				28343EEF1743958800C07DDF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28343EBB1743919300C07DDF /* SenTestingKit.framework in Frameworks */,
-				28343EBD1743919300C07DDF /* UIKit.framework in Frameworks */,
 				28343EBE1743919300C07DDF /* Foundation.framework in Frameworks */,
 				28343EC11743919300C07DDF /* libCBExternalStoryboard.a in Frameworks */,
 			);
@@ -101,9 +114,9 @@
 		28343EAA1743919300C07DDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28343EED1743957F00C07DDF /* UIKit.framework */,
 				28343EAB1743919300C07DDF /* Foundation.framework */,
 				28343EBA1743919300C07DDF /* SenTestingKit.framework */,
-				28343EBC1743919300C07DDF /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,8 +124,9 @@
 		28343EAD1743919300C07DDF /* CBExternalStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				28343EE41743931900C07DDF /* Classes */,
+				28343ED4174392EE00C07DDF /* Segues */,
 				28343EB01743919300C07DDF /* CBExternalStoryboard.h */,
-				28343EB21743919300C07DDF /* CBExternalStoryboard.m */,
 				28343EAE1743919300C07DDF /* Supporting Files */,
 			);
 			path = CBExternalStoryboard;
@@ -143,6 +157,30 @@
 				28343EC51743919300C07DDF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28343ED4174392EE00C07DDF /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				28343ED51743930100C07DDF /* ExternalBaseSegue.h */,
+				28343ED61743930100C07DDF /* ExternalBaseSegue.m */,
+				28343ED71743930100C07DDF /* ExternalModalSegue.h */,
+				28343ED81743930100C07DDF /* ExternalModalSegue.m */,
+				28343ED91743930100C07DDF /* ExternalPushSegue.h */,
+				28343EDA1743930100C07DDF /* ExternalPushSegue.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		28343EE41743931900C07DDF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28343EDB1743930100C07DDF /* ExternalViewController.h */,
+				28343EDC1743930100C07DDF /* ExternalViewController.m */,
+				28343EE81743947F00C07DDF /* CBESNavigationController.h */,
+				28343EE91743947F00C07DDF /* CBESNavigationController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28343EB31743919300C07DDF /* CBExternalStoryboard.m in Sources */,
+				28343EDF1743930100C07DDF /* ExternalBaseSegue.m in Sources */,
+				28343EE01743930100C07DDF /* ExternalModalSegue.m in Sources */,
+				28343EE11743930100C07DDF /* ExternalPushSegue.m in Sources */,
+				28343EE21743930100C07DDF /* ExternalViewController.m in Sources */,
+				28343EEA1743947F00C07DDF /* CBESNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +445,7 @@
 				28343ECF1743919300C07DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28343ED01743919300C07DDF /* Build configuration list for PBXNativeTarget "CBExternalStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +454,7 @@
 				28343ED21743919300C07DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
