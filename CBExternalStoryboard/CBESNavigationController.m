@@ -23,6 +23,8 @@
 - (void)awakeFromNib {
   if ([self.viewControllers[0] isKindOfClass:[ExternalViewController class]]) {
     self.viewControllers = @[[(ExternalViewController *)self.viewControllers[0] externalViewController]];
+    
+      
   }
   [super awakeFromNib];
 }
